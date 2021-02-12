@@ -18,7 +18,7 @@
         public static $subject;
         public static $message;
         public static $fileName;
-        public static $senderEmail ='info@example.com';
+        public static $senderEmail ='info@wacedeveloper.com';
         public static $senderName ='Sender Name Default Value';
         
 
@@ -93,7 +93,7 @@
             $query ="SELECT * FROM ".$this->dbhTable;
             $stmt = $this->connect()->query($query);
 
-            $return = '<table class="table">';
+            $return = '<table class="table text-dark">';
             $return .='<tr>';
             $return .='<th>#</th>';
             $return .='<th>Subject</th>';
