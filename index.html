@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <br>
+        
+        <h2>Send/Track Email</h2>
+
+        
+        <hr>
+        
+        <div class="tab-area">
+            <div class="tablink" data-target="#tab1" style="background: #e3e5f0;">Send Email HTML Template</div>
+            <div class="tablink" data-target="#tab2">View Emails</div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12 tab-content" id="tab1">
+                <h6>Send Email to user</h6>
+                <div class="row">
+                    <div class="col">
+                        <label>Send To</label>
+                        <input type="email" id="userEmail" class="form-control"  placeholder="userEmail@gmail.com">
+                    </div>
+                    <div class="col">
+                        <label>Email Subject</label>
+                        <input type="text" id="subject" class="form-control"  placeholder="The Email Subject">
+                    </div>
+                    <div class="col">
+                        <label>Select Email Template</label>
+                        <select id="fileName" class="form-control">
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Email Text</label>
+                        <textarea class="form-control" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <label>Sender Email</label>
+                        <input type="email" id="senderEmail" class="form-control"  placeholder="yourDomainEmail@example.com">
+                    </div>
+                    <div class="col">
+                        <label>Sender Name</label>
+                        <input type="text" id="senderName" class="form-control"  placeholder="You Name">
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-5" id="submit">Submit</button>
+
+            </div>
+
+
+            <div class="col-md-12 tab-content" id="tab2"></div>
+        </div>
+       
+    </div>
+    
+
+
+
+      
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Result</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="email-show">
+        <div class="content-wrapper"></div>
+        <div class="icon-area"><i class="fa fa-envelope"></i></div>
+        <div class="content-area"></div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
